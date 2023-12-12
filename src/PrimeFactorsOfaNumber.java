@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// this code is to find the prime factors of number
 public class PrimeFactorsOfaNumber {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
@@ -8,7 +8,7 @@ public class PrimeFactorsOfaNumber {
         primeFactors(n);
     }
 
-    public static void primeFactors(int n){
+    public static void primeFactors(int n){ //to get the prime factors
         for(int i=2;i<=n;i++){
             if(isPrime(i)==1){
                 int x=n;
@@ -20,7 +20,7 @@ public class PrimeFactorsOfaNumber {
         }
     }
 
-    public static int isPrime(int n){
+    public static int isPrime(int n){ //to check if it's a prime number
         if(n<=1){
             return 0;
         }
