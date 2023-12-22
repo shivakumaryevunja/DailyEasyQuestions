@@ -4,7 +4,7 @@ import java.util.Stack;
 public class ParenthesisMatchingUsingStack {
     public static void main(String[] args){
         try {
-            System.out.println(match("{}"));
+            System.out.println(match("(()((()(()))(()()"));
             System.out.println(match("{[(}"));
             System.out.println(match("[{{{{{{{}}}}}}}]"));
             System.out.println(match("{{{{{{{}}}}}}}"));
@@ -29,6 +29,7 @@ public class ParenthesisMatchingUsingStack {
                         return false;
                     }
                 }catch (EmptyStackException e){
+                    System.out.println("empty");
                     return false;
                 }
             }else if(a == '}'){
