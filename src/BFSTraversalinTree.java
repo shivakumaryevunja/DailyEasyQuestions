@@ -1,6 +1,7 @@
 public class BFSTraversalinTree {
-    // Breadth First search in tree data structure
+    // Breadth First search in tree data structure using recursive method
     public static void main(String[] args){
+
         Tree1 tree = new Tree1();
         tree.root = new Node1(1);
         tree.root.left = new Node1(6);
